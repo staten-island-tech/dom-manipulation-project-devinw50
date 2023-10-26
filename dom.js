@@ -1,18 +1,9 @@
 //const form = dpocument.querySelector("#form")\
-//const album = 
-const DOMSelectors = {
-    form: document.querySelector("#form"),
-firstName: document.querySelector(".first-name"),
-h2s:document.querySelectorAll("h2"),
-};
+//const pokemon = 
 
-DOMSelectors.form.addEventListener("submit", function(event) {event.preventDefault();
-document
-.querySelector("gallery");
-console.log();
-DOMSelectors.h2s.forEach((el)=> el.textContent = DOMSelectors.firstName.value);
-});
 
+DOMSelectors.h2s.forEach((el) => el.textContent = DOMSelectors.firstName.value);
+DOMSelectors.form.addEventListener("submit", function(event) {event.preventDefault()});
 const card = DOMSelectors.button.addEventListener("click", function(){
     let input= DOMSelectors.input.value;
     let input2= DOMSelectors.input2.value;
@@ -20,20 +11,26 @@ const card = DOMSelectors.button.addEventListener("click", function(){
     `<div class="gallery">
     <div class="card">
         <h2 class="card-header" id="column">${input}</h2>
-        <h3 class="card-info" id="column">${input2}</h3>
-    </div>
+        <h3 class="card-info" id="column">${input2}</h3>  
+        </div>,
     <button type="submit" id="delete">Delete</button>`);
+}
 
     const DOMSelectors = {
         form: document.querySelector("#form"),
-        h2s: document.querySelectorAll("h2"),
+       h2s: document.querySelectorAll("h2"),
         h3s: document.querySelectorAll("h3"),
         button: document.getElementById("btn"),
         input: document.querySelector(#input),
         input2: document.querySelector(#input2),
-        delete: document.querySelector(#delete)
-    };
+       delete: document.querySelector(#delete),
+    });
     
+    function backgroundAndText (background, text){
+        background.style.backgroundColor = "red"
+        text.innerHTML = "hi"
+        text.style.fontSize = "40px"
+    }
 //document
  //   .querySelector("gallery")
   //  .insertAdjacentHTML (
