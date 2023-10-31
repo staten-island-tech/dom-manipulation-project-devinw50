@@ -1,5 +1,4 @@
-//const form = dpocument.querySelector("#form")\
-//const pokemon = 
+
 
 const DOMSelectors = {
     form: document.querySelector("#form"),
@@ -10,10 +9,8 @@ const DOMSelectors = {
     input2: document.querySelector("#input2"),
    delete: document.querySelector("#delete"),
 };
-
-DOMSelectors.form.addEventListener("submit", function(event) 
-{event.preventDefault()});
-const card = DOMSelectors.button.addEventListener("click", function(){
+const card = DOMSelectors.button.addEventListener("click", function(event){
+    event.preventDefault();
     let input= DOMSelectors.input.value;
     let input2= DOMSelectors.input2.value;
     DOMSelectors.form.insertAdjacentHTML("beforeend"
@@ -27,11 +24,7 @@ const card = DOMSelectors.button.addEventListener("click", function(){
 
 
     
-    function backgroundAndText (background, text){
-        background.style.backgroundColor = "red"
-        text.innerHTML = "hi"
-        text.style.fontSize = "40px"
-    }
+  
 //document
  //   .querySelector("gallery")
   //  .insertAdjacentHTML (
