@@ -1,45 +1,38 @@
-//const form = dpocument.querySelector("#form")\
-//const album = 
 const DOMSelectors = {
     form: document.querySelector("#form"),
-firstName: document.querySelector(".first-name"),
-h2s:document.querySelectorAll("h2"),
+    button: document.getElementById("btn"),
+    input: document.querySelector(`#input`),
+    input2: document.querySelector(`#input2`),
+    input3: document.querySelector(`#input3`),
+    remove: document.querySelector(`#remove`),
 };
 
-DOMSelectors.form.addEventListener("submit", function(event) {event.preventDefault();
-document
-.querySelector("gallery");
-console.log();
-DOMSelectors.h2s.forEach((el)=> el.textContent = DOMSelectors.firstName.value);
-});
-
-const card = DOMSelectors.button.addEventListener("click", function(){
+DOMSelectors.form.addEventListener("submit", function(event){
+   event.preventDefault();
+   });
+   const card = DOMSelectors.button.addEventListener("click", function(){
     let input= DOMSelectors.input.value;
     let input2= DOMSelectors.input2.value;
+    let input3 = DOMSelectors.input3.value;
     DOMSelectors.form.insertAdjacentHTML("beforeend",
-    `<div class="gallery">
+    `<div class="column">
     <div class="card">
         <h2 class="card-header" id="column">${input}</h2>
-        <h3 class="card-info" id="column">${input2}</h3>
+        <h3 class="card-info" id="column">Author: ${input2}</h3>
+        <img src = "${input3}" alt = "" class = "img">
+        <button type="click" class="remove">Remove</button>
     </div>
-    <button type="submit" id="delete">Delete</button>`);
-
-    const DOMSelectors = {
-        form: document.querySelector("#form"),
-        h2s: document.querySelectorAll("h2"),
-        h3s: document.querySelectorAll("h3"),
-        button: document.getElementById("btn"),
-        input: document.querySelector(#input),
-        input2: document.querySelector(#input2),
-        delete: document.querySelector(#delete)
-    };
-    
-//document
- //   .querySelector("gallery")
-  //  .insertAdjacentHTML (
- //       "afterbegin",
-
- //       <div class="card">${DOMSelectors.firstName.value}</div>
- //   )
-//DOMSelectors.h2s.forEach((el)=> el.textContent = DOMSelectors.firstName.value)
-//})
+   
+ `);
+   DOMSelectors.input.value = "";
+   DOMSelectors.input2.value ="";
+   DOMSelectors.input3.value ="";
+ 
+ 
+   document.querySelectorAll('.remove').forEach((button) => {
+    button.addEventListener('click', function(event) {
+        event.target.parentElement.parentElement.remove();
+        });
+    });
+ });
+ 
