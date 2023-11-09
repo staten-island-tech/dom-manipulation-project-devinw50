@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body,
 html,
 * {
@@ -5,15 +6,22 @@ html,
     padding: 0.2%;
     margin: 1%;
 }
+=======
+
+>>>>>>> 09278f661845074255460125a2114d8de1f5bea6
 
 body{
     background-color: rgb(137, 197, 207);
     font-family: 'Kanit', sans-serif;    }
+<<<<<<< HEAD
 h1 {
     font-size: 10rem;
     text-align: center;
     color: white;
 }
+=======
+
+>>>>>>> 09278f661845074255460125a2114d8de1f5bea6
 
 .container {
     position: relative;
@@ -41,6 +49,23 @@ h1 {
     box-shadow: 15px 15px 8px rgb(60, 91, 97);
 }
 
+<<<<<<< HEAD
+=======
+.card-price {
+    color: rgb(0, 0, 0);
+    font-size:  2.1rem;
+}
+.card-img {
+    width: 84%;
+}
+
+
+
+
+
+
+
+>>>>>>> 09278f661845074255460125a2114d8de1f5bea6
 
 
 
